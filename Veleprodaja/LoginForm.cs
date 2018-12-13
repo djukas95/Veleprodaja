@@ -30,7 +30,8 @@ namespace Veleprodaja
         private void btnLogin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            PanelForm panel = new PanelForm();
+            //iz baze slati boolean za admina!
+            PanelForm panel = new PanelForm(true);
             panel.Show();
         }
     }
