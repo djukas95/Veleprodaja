@@ -26,5 +26,12 @@ namespace Veleprodaja
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PanelForm panel = new PanelForm();
+            panel.Show();
+        }
     }
 }
