@@ -34,16 +34,16 @@
             this.btnKupci = new System.Windows.Forms.Button();
             this.btnFinansije = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnOdjaviSe = new System.Windows.Forms.Button();
             this.btnMagacin = new System.Windows.Forms.Button();
+            this.btnNalog = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.PictureBox();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnNalog = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRobniPromet
@@ -55,6 +55,7 @@
             this.btnRobniPromet.TabIndex = 0;
             this.btnRobniPromet.Text = "Robni promet";
             this.btnRobniPromet.UseVisualStyleBackColor = true;
+            this.btnRobniPromet.Click += new System.EventHandler(this.btnRobniPromet_Click);
             // 
             // btnDobavljaci
             // 
@@ -96,16 +97,26 @@
             this.panel1.Size = new System.Drawing.Size(359, 508);
             this.panel1.TabIndex = 4;
             // 
-            // button5
+            // pictureBox1
             // 
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(630, 410);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(139, 51);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "Odjavi se";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.pictureBox1.Image = global::Veleprodaja.Properties.Resources.web_logo_BOA_1;
+            this.pictureBox1.Location = new System.Drawing.Point(24, 91);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(313, 309);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnOdjaviSe
+            // 
+            this.btnOdjaviSe.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOdjaviSe.Location = new System.Drawing.Point(630, 410);
+            this.btnOdjaviSe.Name = "btnOdjaviSe";
+            this.btnOdjaviSe.Size = new System.Drawing.Size(139, 51);
+            this.btnOdjaviSe.TabIndex = 8;
+            this.btnOdjaviSe.Text = "Odjavi se";
+            this.btnOdjaviSe.UseVisualStyleBackColor = true;
+            this.btnOdjaviSe.Click += new System.EventHandler(this.btnOdjaviSe_Click);
             // 
             // btnMagacin
             // 
@@ -116,6 +127,16 @@
             this.btnMagacin.TabIndex = 9;
             this.btnMagacin.Text = "Magacin";
             this.btnMagacin.UseVisualStyleBackColor = true;
+            // 
+            // btnNalog
+            // 
+            this.btnNalog.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNalog.Location = new System.Drawing.Point(829, 253);
+            this.btnNalog.Name = "btnNalog";
+            this.btnNalog.Size = new System.Drawing.Size(140, 61);
+            this.btnNalog.TabIndex = 17;
+            this.btnNalog.Text = "Nalog";
+            this.btnNalog.UseVisualStyleBackColor = true;
             // 
             // btnExit
             // 
@@ -141,26 +162,6 @@
             this.btnMinimize.TabStop = false;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Veleprodaja.Properties.Resources.web_logo_BOA_1;
-            this.pictureBox1.Location = new System.Drawing.Point(24, 91);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(313, 309);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnNalog
-            // 
-            this.btnNalog.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNalog.Location = new System.Drawing.Point(829, 253);
-            this.btnNalog.Name = "btnNalog";
-            this.btnNalog.Size = new System.Drawing.Size(140, 61);
-            this.btnNalog.TabIndex = 17;
-            this.btnNalog.Text = "Nalog";
-            this.btnNalog.UseVisualStyleBackColor = true;
-            // 
             // PanelForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -169,7 +170,7 @@
             this.ClientSize = new System.Drawing.Size(1017, 508);
             this.Controls.Add(this.btnNalog);
             this.Controls.Add(this.btnMagacin);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnOdjaviSe);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnMinimize);
             this.Controls.Add(this.panel1);
@@ -184,9 +185,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PanelForm";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -201,7 +202,7 @@
         private System.Windows.Forms.PictureBox btnMinimize;
         private System.Windows.Forms.PictureBox btnExit;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnOdjaviSe;
         private System.Windows.Forms.Button btnMagacin;
         private System.Windows.Forms.Button btnNalog;
     }

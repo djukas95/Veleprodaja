@@ -5,18 +5,29 @@ namespace Veleprodaja
 {
     public partial class PanelForm : Form
     {
-        public PanelForm(Boolean admin)
+        private void login()
         {
-            InitializeComponent();
-            if (admin)
+            LoginForm loginForm = new LoginForm();
+            DialogResult result = loginForm.ShowDialog();
+
+            if (result.Equals(DialogResult.Yes))
             {
-                pictureBox1.Image = Veleprodaja.Properties.Resources.
+                pictureBox1.Image = Properties.Resources.blue_boa;
 
             }
-            else
+            else if(result.Equals(DialogResult.No))
             {
                 btnNalog.Enabled = false;
             }
+            else
+            {
+                Application.Exit();
+            }
+        }
+        public PanelForm()
+        {
+            InitializeComponent();
+            login();
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)
@@ -29,11 +40,25 @@ namespace Veleprodaja
             Application.Exit();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnRobniPromet_Click(object sender, EventArgs e)
         {
-            this.Close();
-            LoginForm form = new LoginForm();
-            form.Show();
+            RobniPrometForm prometForm = new RobniPrometForm();
+            prometForm.Show();
+        }
+
+        private void btnOdjaviSe_Click(object sender, EventArgs e)
+        {
+            int countForms = Application.OpenForms.Count;
+            if (countForms > 1)
+            {
+                MessageBox.Show("Imate otvorenih formi, molimo Vas da sačuvate izmjene!");
+            }
+            else
+            {
+                this.Hide();
+                login();
+                this.Show();
+            }
         }
     }
 }

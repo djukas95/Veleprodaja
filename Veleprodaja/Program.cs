@@ -16,7 +16,7 @@ namespace Veleprodaja
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            Application.Run(new PanelForm());
         }
     }
 }
