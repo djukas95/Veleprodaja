@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace Veleprodaja
 {
-    public partial class LoginForm : Form
+    public partial class FinansijeForm : Form
     {
-        public LoginForm()
+        public FinansijeForm()
         {
             InitializeComponent();
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            //Application.Exit();
-            this.DialogResult = DialogResult.Abort;
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)
@@ -28,9 +22,8 @@ namespace Veleprodaja
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.No;
             this.Close();
         }
     }

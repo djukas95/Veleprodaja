@@ -34,16 +34,16 @@
             this.btnKupci = new System.Windows.Forms.Button();
             this.btnFinansije = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnOdjaviSe = new System.Windows.Forms.Button();
             this.btnMagacin = new System.Windows.Forms.Button();
             this.btnNalog = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.PictureBox();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRobniPromet
@@ -86,6 +86,7 @@
             this.btnFinansije.TabIndex = 3;
             this.btnFinansije.Text = "Finansije";
             this.btnFinansije.UseVisualStyleBackColor = true;
+            this.btnFinansije.Click += new System.EventHandler(this.btnFinansije_Click);
             // 
             // panel1
             // 
@@ -96,16 +97,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(359, 508);
             this.panel1.TabIndex = 4;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Veleprodaja.Properties.Resources.web_logo_BOA_1;
-            this.pictureBox1.Location = new System.Drawing.Point(24, 91);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(313, 309);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // btnOdjaviSe
             // 
@@ -162,6 +153,16 @@
             this.btnMinimize.TabStop = false;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Veleprodaja.Properties.Resources.web_logo_BOA_1;
+            this.pictureBox1.Location = new System.Drawing.Point(24, 91);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(313, 309);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // PanelForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -185,9 +186,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PanelForm";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

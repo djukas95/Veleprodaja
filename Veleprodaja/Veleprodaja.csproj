@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FinansijeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinansijeForm.Designer.cs">
+      <DependentUpon>FinansijeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +71,9 @@
     <Compile Include="RobniPrometForm.Designer.cs">
       <DependentUpon>RobniPrometForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FinansijeForm.resx">
+      <DependentUpon>FinansijeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>

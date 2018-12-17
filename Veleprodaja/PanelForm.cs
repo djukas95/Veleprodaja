@@ -61,5 +61,11 @@ namespace Veleprodaja
                 this.Show();
             }
         }
+
+        private void btnFinansije_Click(object sender, EventArgs e)
+        {
+            FinansijeForm ff = new FinansijeForm();
+            ff.Show();
+        }
     }
 }

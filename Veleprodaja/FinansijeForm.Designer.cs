@@ -1,6 +1,6 @@
 ﻿namespace Veleprodaja
 {
-    partial class RobniPrometForm
+    partial class FinansijeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RobniPrometForm));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FinansijeForm));
             this.button1 = new System.Windows.Forms.Button();
-            this.btnDodavanjeArtikla = new System.Windows.Forms.Button();
-            this.btnNivelacijaCijena = new System.Windows.Forms.Button();
-            this.btnArhivirajArtikal = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.btnZatvori = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -42,64 +42,64 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(36, 94);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1022, 327);
-            this.dataGridView1.TabIndex = 0;
-            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(36, 460);
+            this.button1.Location = new System.Drawing.Point(65, 453);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(149, 59);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Kalkulacija cijena";
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Izdavanje računa";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // btnDodavanjeArtikla
+            // button2
             // 
-            this.btnDodavanjeArtikla.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDodavanjeArtikla.Location = new System.Drawing.Point(254, 460);
-            this.btnDodavanjeArtikla.Name = "btnDodavanjeArtikla";
-            this.btnDodavanjeArtikla.Size = new System.Drawing.Size(149, 59);
-            this.btnDodavanjeArtikla.TabIndex = 2;
-            this.btnDodavanjeArtikla.Text = "Dodavanje artikla";
-            this.btnDodavanjeArtikla.UseVisualStyleBackColor = true;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(272, 453);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(149, 59);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Pregled izdatih računa";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // btnNivelacijaCijena
+            // button3
             // 
-            this.btnNivelacijaCijena.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNivelacijaCijena.Location = new System.Drawing.Point(472, 460);
-            this.btnNivelacijaCijena.Name = "btnNivelacijaCijena";
-            this.btnNivelacijaCijena.Size = new System.Drawing.Size(149, 59);
-            this.btnNivelacijaCijena.TabIndex = 3;
-            this.btnNivelacijaCijena.Text = "Nivelacija cijena";
-            this.btnNivelacijaCijena.UseVisualStyleBackColor = true;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(479, 453);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(149, 59);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Evidentiranje uplate kupca";
+            this.button3.UseVisualStyleBackColor = true;
             // 
-            // btnArhivirajArtikal
+            // button4
             // 
-            this.btnArhivirajArtikal.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnArhivirajArtikal.Location = new System.Drawing.Point(690, 460);
-            this.btnArhivirajArtikal.Name = "btnArhivirajArtikal";
-            this.btnArhivirajArtikal.Size = new System.Drawing.Size(149, 59);
-            this.btnArhivirajArtikal.TabIndex = 4;
-            this.btnArhivirajArtikal.Text = "Arhiviraj artikal";
-            this.btnArhivirajArtikal.UseVisualStyleBackColor = true;
+            this.button4.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(686, 453);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(149, 59);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Evidentiranje uplate dobavljaču";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // btnZatvori
             // 
             this.btnZatvori.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnZatvori.Location = new System.Drawing.Point(908, 460);
+            this.btnZatvori.Location = new System.Drawing.Point(893, 453);
             this.btnZatvori.Name = "btnZatvori";
             this.btnZatvori.Size = new System.Drawing.Size(149, 59);
-            this.btnZatvori.TabIndex = 5;
+            this.btnZatvori.TabIndex = 6;
             this.btnZatvori.Text = "Zatvori";
             this.btnZatvori.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(65, 95);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(955, 311);
+            this.dataGridView1.TabIndex = 7;
             // 
             // btnMinimize
             // 
@@ -109,7 +109,7 @@
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(32, 36);
             this.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimize.TabIndex = 7;
+            this.btnMinimize.TabIndex = 9;
             this.btnMinimize.TabStop = false;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
@@ -121,28 +121,29 @@
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(32, 36);
             this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnExit.TabIndex = 6;
+            this.btnExit.TabIndex = 8;
             this.btnExit.TabStop = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // RobniPrometForm
+            // FinansijeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1091, 540);
             this.Controls.Add(this.btnMinimize);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnZatvori);
-            this.Controls.Add(this.btnArhivirajArtikal);
-            this.Controls.Add(this.btnNivelacijaCijena);
-            this.Controls.Add(this.btnDodavanjeArtikla);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnZatvori);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "RobniPrometForm";
+            this.MaximizeBox = false;
+            this.Name = "FinansijeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "RobniPrometForm";
+            this.Text = "FinansijeForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
@@ -152,12 +153,12 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnDodavanjeArtikla;
-        private System.Windows.Forms.Button btnNivelacijaCijena;
-        private System.Windows.Forms.Button btnArhivirajArtikal;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnZatvori;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.PictureBox btnMinimize;
         private System.Windows.Forms.PictureBox btnExit;
     }
