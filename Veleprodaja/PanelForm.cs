@@ -38,7 +38,6 @@ namespace Veleprodaja
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        
         }
 
         private void btnRobniPromet_Click(object sender, EventArgs e)
