@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FinansijeForm));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnIzdavanjeRacuna = new System.Windows.Forms.Button();
+            this.btnPregledIzdatihRacuna = new System.Windows.Forms.Button();
+            this.btnEvidentiranjeUplateKupca = new System.Windows.Forms.Button();
+            this.btnEvidentiranjeUplateDobavljacu = new System.Windows.Forms.Button();
             this.btnZatvori = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
@@ -42,45 +42,45 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnIzdavanjeRacuna
             // 
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(65, 453);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(149, 59);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Izdavanje računa";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnIzdavanjeRacuna.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIzdavanjeRacuna.Location = new System.Drawing.Point(65, 453);
+            this.btnIzdavanjeRacuna.Name = "btnIzdavanjeRacuna";
+            this.btnIzdavanjeRacuna.Size = new System.Drawing.Size(149, 59);
+            this.btnIzdavanjeRacuna.TabIndex = 0;
+            this.btnIzdavanjeRacuna.Text = "Izdavanje računa";
+            this.btnIzdavanjeRacuna.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnPregledIzdatihRacuna
             // 
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(272, 453);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(149, 59);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Pregled izdatih računa";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnPregledIzdatihRacuna.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPregledIzdatihRacuna.Location = new System.Drawing.Point(272, 453);
+            this.btnPregledIzdatihRacuna.Name = "btnPregledIzdatihRacuna";
+            this.btnPregledIzdatihRacuna.Size = new System.Drawing.Size(149, 59);
+            this.btnPregledIzdatihRacuna.TabIndex = 1;
+            this.btnPregledIzdatihRacuna.Text = "Pregled izdatih računa";
+            this.btnPregledIzdatihRacuna.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnEvidentiranjeUplateKupca
             // 
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(479, 453);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(149, 59);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Evidentiranje uplate kupca";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnEvidentiranjeUplateKupca.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEvidentiranjeUplateKupca.Location = new System.Drawing.Point(479, 453);
+            this.btnEvidentiranjeUplateKupca.Name = "btnEvidentiranjeUplateKupca";
+            this.btnEvidentiranjeUplateKupca.Size = new System.Drawing.Size(149, 59);
+            this.btnEvidentiranjeUplateKupca.TabIndex = 2;
+            this.btnEvidentiranjeUplateKupca.Text = "Evidentiranje uplate kupca";
+            this.btnEvidentiranjeUplateKupca.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnEvidentiranjeUplateDobavljacu
             // 
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(686, 453);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(149, 59);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Evidentiranje uplate dobavljaču";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnEvidentiranjeUplateDobavljacu.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEvidentiranjeUplateDobavljacu.Location = new System.Drawing.Point(686, 453);
+            this.btnEvidentiranjeUplateDobavljacu.Name = "btnEvidentiranjeUplateDobavljacu";
+            this.btnEvidentiranjeUplateDobavljacu.Size = new System.Drawing.Size(149, 59);
+            this.btnEvidentiranjeUplateDobavljacu.TabIndex = 3;
+            this.btnEvidentiranjeUplateDobavljacu.Text = "Evidentiranje uplate dobavljaču";
+            this.btnEvidentiranjeUplateDobavljacu.UseVisualStyleBackColor = true;
             // 
             // btnZatvori
             // 
@@ -134,10 +134,10 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnZatvori);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnEvidentiranjeUplateDobavljacu);
+            this.Controls.Add(this.btnEvidentiranjeUplateKupca);
+            this.Controls.Add(this.btnPregledIzdatihRacuna);
+            this.Controls.Add(this.btnIzdavanjeRacuna);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -153,10 +153,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnIzdavanjeRacuna;
+        private System.Windows.Forms.Button btnPregledIzdatihRacuna;
+        private System.Windows.Forms.Button btnEvidentiranjeUplateKupca;
+        private System.Windows.Forms.Button btnEvidentiranjeUplateDobavljacu;
         private System.Windows.Forms.Button btnZatvori;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.PictureBox btnMinimize;

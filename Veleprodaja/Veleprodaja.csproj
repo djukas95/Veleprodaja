@@ -57,6 +57,12 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MagacinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MagacinForm.Designer.cs">
+      <DependentUpon>MagacinForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PanelForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MagacinForm.resx">
+      <DependentUpon>MagacinForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PanelForm.resx">
       <DependentUpon>PanelForm.cs</DependentUpon>

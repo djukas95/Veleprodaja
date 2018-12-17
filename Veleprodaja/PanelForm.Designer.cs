@@ -118,6 +118,7 @@
             this.btnMagacin.TabIndex = 9;
             this.btnMagacin.Text = "Magacin";
             this.btnMagacin.UseVisualStyleBackColor = true;
+            this.btnMagacin.Click += new System.EventHandler(this.btnMagacin_Click);
             // 
             // btnNalog
             // 

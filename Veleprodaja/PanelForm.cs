@@ -66,5 +66,11 @@ namespace Veleprodaja
             FinansijeForm ff = new FinansijeForm();
             ff.Show();
         }
+
+        private void btnMagacin_Click(object sender, EventArgs e)
+        {
+            MagacinForm mg = new MagacinForm();
+            mg.Show();
+        }
     }
 }
